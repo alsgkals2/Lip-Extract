@@ -1,9 +1,11 @@
-# Lips Don't Lie: A Generalisable and Robust Approach to Face Forgery Detection
-This is a PyTorch implementation of the [LipForensics paper](https://arxiv.org/abs/2012.07657).
+# Lip-Extract
+### This Repo contains the codes for extraction the landmark and lip  
 
-### This is an Unofficially implemented codes with some Official code. I made this repo to use more conveniently.
+This is a PyTorch implementation by referreing [LipForensics paper](https://arxiv.org/abs/2012.07657). 
+#### This is an Unofficially implemented codes with some Official code. I made this repo to use more conveniently.
 #### If you want to see the Original code, You can cite [this link](https://github.com/ahaliassos/LipForensics)
 #### You should try the preprocessing, which steps are firstly getting landmarks and then cropping mouth.
+ 
 ## Setup
 ### Install packages
 ```bash
