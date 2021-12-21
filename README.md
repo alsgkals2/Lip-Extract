@@ -21,14 +21,16 @@ Note: we used Python version 3.8 to test this code.
     * [DFDC](https://ai.facebook.com/datasets/dfdc/) (the test set of the full version, not the Preview)
 2. Extract the frames (e.g. using code in the [FaceForensics++ repo](https://github.com/ondyari/FaceForensics/blob/master/dataset/extract_compressed_videos.py).)
 The filenames of the frames should be as follows: 0000.png, 0001.png, ....
-3. Detect the faces and compute 68 face landmarks. For example, you can use [RetinaFace](https://github.com/biubug6/Pytorch_Retinaface) and [FAN](https://github.com/1adrianb/face-alignment) for good results. 
+3. Detect the faces and compute 68 face landmarks. For example, 
 
-4. Running
-4.1 Landmark Extraction
+### 4. Running 
+#### 4.1 Landmark Extraction 
+For extraction the landmark of faces, I referred [RetinaFace](https://github.com/biubug6/Pytorch_Retinaface) and [FAN](https://github.com/1adrianb/face-alignment) for good results. The results are .json files
     ```bash
-    You can use easy_start_lip_extract.ipynb
-    ```
-4.2 Lip Extraction and Crop
+   You can use easy_start_lip_extract.ipynb
+    ``` 
+    
+#### 4.2 Lip Extraction and Crop 
     ```bash
    python preprocessing/crop_mouths.py --dataset all
     ```
