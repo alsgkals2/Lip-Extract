@@ -1,4 +1,4 @@
-# Lip-Extract
+# Lip-Extraction
 ### This Repo contains the codes for extraction the landmark and lip  
 
 This is a PyTorch implementation by referreing [LipForensics paper](https://arxiv.org/abs/2012.07657). 
@@ -23,7 +23,12 @@ Note: we used Python version 3.8 to test this code.
 The filenames of the frames should be as follows: 0000.png, 0001.png, ....
 3. Detect the faces and compute 68 face landmarks. For example, you can use [RetinaFace](https://github.com/biubug6/Pytorch_Retinaface) and [FAN](https://github.com/1adrianb/face-alignment) for good results. 
 
-4. To crop the mouth region from each frame for all datasets, run
+4. Running
+4.1 Landmark Extraction
+    ```bash
+    You can use easy_start_lip_extract.ipynb
+    ```
+4.2 Lip Extraction and Crop
     ```bash
    python preprocessing/crop_mouths.py --dataset all
     ```
